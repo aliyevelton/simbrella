@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.first {
+  height: 100dvh;
+  background-image: url(../../assets/media/cover.jpg);
+}
+.first #navbar_top {
+  display: flex;
+  justify-content: center;
+}
+.first #navbar_top div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 110px;
+  width: 1100px;
+  z-index: 9999;
+  transition: 300ms linear;
+  background-color: rgba(255, 255, 255, 0);
+}
+.first #navbar_top div nav {
+  width: 740px;
+}
+.first #navbar_top div nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.first #navbar_top div nav ul li {
+  padding-left: 35px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.first #navbar_top div nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+.first #navbar_top div .logo {
+  height: 55px;
+  width: 154px;
+  padding: 0;
+}
+.first #navbar_top div .logo a {
+  height: 100%;
+  width: 100%;
+}
+.first #navbar_top div .logo a img {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.wrapper .fixed-navbar {
+  transition: 300ms linear;
+  background-color: white !important;
+}
+.wrapper .fixed-navbar div {
+  height: 90px !important;
+}
+.wrapper .fixed-navbar div nav ul li a {
+  color: #000000 !important;
+}
+.wrapper .info {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  margin: 0 210px;
+  padding: 0 20px;
+}
+.wrapper .info div {
+  height: 305px;
+  width: 610px;
+  color: white;
+}
+.wrapper .info div h1 {
+  font-size: 48px;
+  height: 185.7px;
+  width: 610px;
+  padding: 0 0 16px;
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  animation: myHeader ease-in-out 800ms;
+}
+.wrapper .info div p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-weight: 600;
+  animation: myParagraph ease-in-out 1200ms;
+}
+
+.second {
+  height: 555.6px;
+  padding: 35px 0 60px;
+  display: flex;
+  justify-content: center;
+}
+.second header {
+  height: 56px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+.second header h2 {
+  font-size: 36px;
+  color: #2D3192;
+}
+.second header div {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes myHeader {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes myParagraph {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
